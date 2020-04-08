@@ -1,38 +1,179 @@
 .App {
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
+  display: gird;
+  grid-template-areas: 'header    header    header'
+                      'generator generator generator'
+                      'collage   collage   collage';
+                        
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  height: 100px;
+  margin: 10px;
+  background: #6441A5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+  background: linear-gradient(to right, #2a0845, #6441A5);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header img {
+  margin-top: 10px;
+  height: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.memeContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
   color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.meme {
+  display: grid;
+  grid-template: repeat(5, 20%) / auto;
 }
 
-@keyframes App-logo-spin {
+.meme img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.topText {
+  grid-area: 1 / 1 / span 1 / 2
+}
+
+.bottomText {
+  grid-area: 5 / 1 / span 1 / 2
+}
+
+.memege {
+  grid-area: 1 / 1 / span 5 / 2
+}
+
+.generator {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 15px;
+}
+
+.generator input {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  border: solid 2px purple;
+  background-color: rgba(191, 185, 185, 0.515);
+  color: purple;
+  transition: .25s;
+}
+
+.generator input:focus {
+  background-color:purple;
+  color: white;
+  font-size: 14px;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  background: #6441A5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+  background: linear-gradient(to right, #2a0845, #6441A5);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  transition: .25s;
+}
+
+button:hover {
+  background-color: white;
+  color: purple;
+}
+
+.memeCollage {
+  grid-area: collage;
+  margin-top: 100px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: 300px;
+  --stagger-delay: 100ms;
+}
+
+.image {
+  align-self: center;
+}
+
+img {
+  animation: memeEntrance 700ms ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes memeEntrance {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: scale(0.3);
+    filter: hue-rotate(180deg);
   }
+
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: scale(1);
+    filter: hue-rotate(0deg);
   }
 }
+
+.memeCollage img {
+  margin: 5px;
+  max-width: 200px;
+  max-height: 300px;
+  border: dashed 1px purple;
+  transition: .20s;
+  
+}
+
+.image:hover {
+  scale: 150%;
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { 
+  .generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .generator input {
+    margin: 5px;
+    width: 300px;
+  }
+
+  .generator button {
+    margin-top: 10px;
+  }
+
+  .memeCollage {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .image {
+    width: auto;
+  }
+
+ }
