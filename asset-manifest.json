@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.38517625.chunk.css",
-    "main.js": "/static/js/main.8425375e.chunk.js",
-    "main.js.map": "/static/js/main.8425375e.chunk.js.map",
+    "main.css": "/static/css/main.68d01dd2.chunk.css",
+    "main.js": "/static/js/main.d73bfae9.chunk.js",
+    "main.js.map": "/static/js/main.d73bfae9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6853e402.js",
     "runtime-main.js.map": "/static/js/runtime-main.6853e402.js.map",
     "static/js/2.5defe18e.chunk.js": "/static/js/2.5defe18e.chunk.js",
     "static/js/2.5defe18e.chunk.js.map": "/static/js/2.5defe18e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.39ae1cbc46420528d888e314074b321e.js": "/precache-manifest.39ae1cbc46420528d888e314074b321e.js",
+    "precache-manifest.e785e6732fe12865e2602eb1aa5138de.js": "/precache-manifest.e785e6732fe12865e2602eb1aa5138de.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.38517625.chunk.css.map": "/static/css/main.38517625.chunk.css.map",
-    "static/js/2.5defe18e.chunk.js.LICENSE.txt": "/static/js/2.5defe18e.chunk.js.LICENSE.txt"
+    "static/css/main.68d01dd2.chunk.css.map": "/static/css/main.68d01dd2.chunk.css.map",
+    "static/js/2.5defe18e.chunk.js.LICENSE.txt": "/static/js/2.5defe18e.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Trollface.be324d5b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6853e402.js",
     "static/js/2.5defe18e.chunk.js",
-    "static/css/main.38517625.chunk.css",
-    "static/js/main.8425375e.chunk.js"
+    "static/css/main.68d01dd2.chunk.css",
+    "static/js/main.d73bfae9.chunk.js"
   ]
 }
