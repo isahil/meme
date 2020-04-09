@@ -17,7 +17,7 @@
     "deploy" : "npm run build&&gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "homepage": "https://isahil.github.io/meme"
+    "homepage": "https://isahil.github.io/meme/"
   },
   "eslintConfig": {
     "extends": "react-app"
