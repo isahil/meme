@@ -6,7 +6,7 @@ import MemeContainer from "../src/memeContainer";
 function App() {
   return (
     <div className="App">
-        <Header />
+        {/* <Header /> */}
         <MemeContainer />
     </div>
   );

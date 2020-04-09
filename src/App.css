@@ -9,6 +9,7 @@
 }
 
 header {
+  background-image: url('./Trollface.png');
   height: 100px;
   margin: 10px;
   background: #6441A5;  /* fallback for old browsers */
